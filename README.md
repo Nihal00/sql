@@ -46,3 +46,38 @@
 4. Character: CHAR, VARCHAR, LONGVARCHAR, NCHAR, NVARCHAR, LONGNVARCHAR
 5. Binary: BINARY, VARBINARY, LONGBINARY
 6. Boolean: BOOLEAN (MySQL)
+
+
+## ACID properties
+- Properties of a transaction
+- Atomicity : Transaction should be complete or not happen at all
+- Consistency : After transaction completion, data must maintain its consistency
+- Isolation : Multiple users can perform their transactions concurrently without affecting each other's results
+- Durability : Once the transaction is committed, it will remain so even in case of system failure
+
+#### Atomicity
+- Every Transaction is either completely successful or failed entirely. There in no mid way.
+
+#### Consistency
+- A consistent set of read operations on non-replicated objects are executed by every node in the cluster.
+- The Data is consistent before and after the transaction
+
+#### Isolation
+- Multiple transactions can occur concurrently without any interference between them.
+- Ensures when multipy transaction can occure concurrently it doesn't make the data inconsistent
+
+#### Durabitily
+- All changes made by a transaction are recorded in the log file
+- In case of crash recovery, we need to replay the logs to bring back the database to previous state
+- Ensures that the data is never lost even in case of system failure.
+- Data is Persistent
+
+
+## Types of SQL Commands
+1. DDL (Data Definition Language): CREATE, ALTER, DROP
+2. DML (Data Manipulation Language): INSERT, UPDATE, DELETE
+3. DCL (Data Control Language): GRANT, REVOKE
+4. TCL (Transaction Control Language): COMMIT, ROLLBACK, SAVEPOINT, SET TRANSACTION
+5. DQL (Data Query Language) SELECT
+
+## Running SQL Commands
