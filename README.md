@@ -80,4 +80,50 @@
 4. TCL (Transaction Control Language): COMMIT, ROLLBACK, SAVEPOINT, SET TRANSACTION
 5. DQL (Data Query Language) SELECT
 
+### DDL => Data Definition Language
+- DDL Commonds are used to define structure of a table / database
+    - CREATE
+    - DROP
+    - ALTER
+### DML => Data Manipulation Language 
+- Manpulation or Modefying data in tables
+    - INSERT
+    - UPDATE
+    - DELETE
+
+### DCL => Data Control Language
+- Used for access control
+- They are used to grant and take back authority from database user
+    - GRANT => GRANT UPDATE, INSERT ON USERS TO NIHAL;
+    - REVOKE
+
+### TCL => Transaction Control Language 
+- It controls the flow of data manipulated within a single session
+- These commands do not perform any action on data but they manage the work done by other commands
+    - COMMIT
+    - ROLLBACK
+    - SAVE POINT
+    - SET TRANSACTION ISOLATION LEVEL
+
+### DQL => Data Query Language
+- Queries the data stored in the Database
+    - SELECT => SELECT * FROM Users;
+    
+
+## Primary key
+- Which is unique identifis records in a table
+- Unique and not null
+
+## Candidate key
+- columns which can become primary key
+- A column or group of columns in a relation schema that uniquely identify each record
+
+## Alternate key
+- Alternate key is a candidate key which is not primary key
+
+## Foreign key
+- Foreign key is a column in one table that refers to the primary key of another tabel
+- Columns in one table that refer to the PRIMARY KEY in another table
+- This helps maintain the relationship between two related tables
+
 ## Running SQL Commands
