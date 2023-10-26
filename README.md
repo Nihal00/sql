@@ -127,3 +127,36 @@
 - This helps maintain the relationship between two related tables
 
 ## Running SQL Commands
+
+## Joints in MySQL
+- Used to combind diffrent row from two or more tables, based on comman column
+
+### Types of Joins
+1. INNER JOIN: Returns only the rows where there is a match in both tables
+2. LEFT (OUTER) JOIN: Return all rows from the left table, and the matched rows from the right table
+3. RIGHT (OUTER) JOIN: Return all rows from the right table, and the matched rows from the left table
+4. CROSS JOIN: Returns all the combinations of rows from entry table
+5. FULL OUTER JOIN: Return all rows when there is a match in either left or right table
+6. SELF JOIN: Self join returns result set that includes duplicate rows if there are matches found in same table.
+7. SELF JOIN: To compare a table with itself
+
+
+## Aggregate function in SQL
+- An Aggregare function where the value of multipul rows are group together as input base in some criteria
+
+### Types 
+1. Count() => Counts the number of rows in a table
+2. Sum() => Returns the total sum of the Column
+3. Avg() => Returns the avg of a colummn
+4. Min() => Returns the min value in a columns
+5. Max() => Returns the max values of a columns
+
+
+## Group by and having closuses
+- GROUP BY clause groups the result set by one or more columns
+- The GROUP BY statement groups records that have the same value into summary table
+- SELECT Count(City), City FROM Employee GROUP BY City;
+
+- HAVING clause filters the grouped result
+
+
